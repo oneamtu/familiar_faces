@@ -1,3 +1,3 @@
-%ul.small-block-grid-2
-  - @tags.each do |tag|
-    %li= link_to tag.name.upcase, tag, class: "dashboard-tag-button"
+- @tags.zip(["primary", "ternary", "secondary", "quaternary"]).each do |tag, color|
+  .row.dashboard-tag
+    = link_to tag.name.upcase, tag, class: ["dashboard-tag-button", color]

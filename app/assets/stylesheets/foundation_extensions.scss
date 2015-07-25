@@ -1,0 +1,19 @@
+@import "foundation_and_overrides";
+
+.row.dashboard-tag {
+}
+
+a.dashboard-tag-button {
+  @include button;
+
+  width: 100%;
+  margin: 0;
+  font-size: 5.5em;
+  font-weight: bold;
+  color: $button-font-color;
+
+  &.primary { @include button-style($bg: $primary-color); }
+  &.secondary { @include button-style($bg: $secondary-color); }
+  &.ternary { @include button-style($bg: $ternary-color); }
+  &.quaternary { @include button-style($bg: $quaternary-color); }
+}
