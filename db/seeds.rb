@@ -42,7 +42,8 @@ bill = Person.create(first_name: "Bill",
 Tag.create([{ name: 'Family' },
             { name: 'Friends' },
             { name: 'Caregivers' },
-            { name: 'Coworkers' }])
+            { name: 'Coworkers' },
+            { name: 'All' }])
 
 TagRecord.create(person: tom, tag: Tag.find_by_name('Friends'))
 TagRecord.create(person: tom, tag: Tag.find_by_name('Coworkers'))
@@ -58,3 +59,4 @@ PersonImage.create(person: mom, image: File.open('app/assets/images/michelle.jpg
 PersonImage.create(person: jim, image: File.open('app/assets/images/jim.jpg'))
 PersonImage.create(person: chris, image: File.open('app/assets/images/farley.jpg'))
 PersonImage.create(person: bill, image: File.open('app/assets/images/belichick.jpg'))
+PersonImage.create(person: bill, image: File.open('app/assets/images/brady.jpg'))

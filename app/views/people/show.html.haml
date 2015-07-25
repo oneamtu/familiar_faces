@@ -1,6 +1,12 @@
-= image_tag(@person.image_path)
-%h1= @person.name
-%p #{@person.relationship_description}
-%p Birthday: #{@person.birthday.to_s(:long)}
-%p Notes: #{@person.notes}
-= link_to "Edit", [:edit, @person]
+%div.row
+  %ul.example-orbit{"data-orbit" => ""}
+    - @person.image_paths.reverse.each do |path|
+      %li
+        %img{:alt => "#{@person.name}", :src => "#{path}"}
+        .orbit-caption #{@person.name}
+
+  %h1= @person.name
+  %p #{@person.relationship_description}
+  %p Birthday: #{@person.birthday.to_s(:long)}
+  %p Notes: #{@person.notes}
+  #{link_to "Home", [:root]} | #{link_to "Edit", [:edit, @person]}
