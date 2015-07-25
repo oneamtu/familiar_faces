@@ -42,16 +42,16 @@ bill = Person.create(first_name: "Bill",
 Tag.create([{ name: 'Family' },
             { name: 'Friends' },
             { name: 'Caregivers' },
-            { name: 'Coworkers' },
+            { name: 'Today' },
             { name: 'All' }])
 
 TagRecord.create(person: tom, tag: Tag.find_by_name('Friends'))
-TagRecord.create(person: tom, tag: Tag.find_by_name('Coworkers'))
+TagRecord.create(person: tom, tag: Tag.find_by_name('Today'))
 TagRecord.create(person: dad, tag: Tag.find_by_name('Family'))
 TagRecord.create(person: mom, tag: Tag.find_by_name('Family'))
 TagRecord.create(person: jim, tag: Tag.find_by_name('Friends'))
 TagRecord.create(person: chris, tag: Tag.find_by_name('Caregivers'))
-TagRecord.create(person: bill, tag: Tag.find_by_name('Coworkers'))
+TagRecord.create(person: bill, tag: Tag.find_by_name('Today'))
 
 PersonImage.create(person: tom, image: File.open('app/assets/images/brady.jpg'))
 PersonImage.create(person: dad, image: File.open('app/assets/images/barack.jpg'))
