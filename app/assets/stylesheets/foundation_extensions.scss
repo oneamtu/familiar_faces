@@ -17,3 +17,7 @@ a.dashboard-tag-button {
   &.ternary { @include button-style($bg: $ternary-color); }
   &.quaternary { @include button-style($bg: $quaternary-color); }
 }
+
+img.home-button {
+  height: 30px;
+}
