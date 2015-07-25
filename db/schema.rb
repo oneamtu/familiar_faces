@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20150725173828) do
   end
 
   create_table "tag_records", force: :cascade do |t|
-    t.integer  "tags_id"
-    t.integer  "people_id"
+    t.integer  "tag_id"
+    t.integer  "person_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
