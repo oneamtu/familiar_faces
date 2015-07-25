@@ -1,5 +1,9 @@
 %h1= @tag
 = link_to "Back", [:tags]
-%ul
-  - @people.each do |person|
-    %li= link_to person, person
+%table
+  %ul.small-block-grid-2.medium-block-grid-3.large-block-grid-4
+    - @people.each do |person|
+      %li
+        = link_to person do
+          = person.to_s
+          %img{:src => "#{person.image_path}"}

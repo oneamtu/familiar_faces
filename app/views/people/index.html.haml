@@ -1,9 +1,0 @@
-%body
-  %h1= @tag.to_s
-  %table
-    %ul.small-block-grid-2.medium-block-grid-3.large-block-grid-4
-      - @people.each do |p|
-        %li
-          = link_to p do
-            = p.to_s
-            %img{:src => "#{p.image_path}"}
