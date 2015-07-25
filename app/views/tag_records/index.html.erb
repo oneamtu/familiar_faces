@@ -1,0 +1,5 @@
+<ul>
+  <% @tag_records.each do |tag_record| %>
+    <li><% link_to tag_record.person, tag_record.person %></li>
+  <% end %>
+</ul>
