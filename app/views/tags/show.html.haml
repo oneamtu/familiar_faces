@@ -1,0 +1,5 @@
+%h1= @tag
+= link_to "Back", [:tags]
+%ul
+  - @people.each do |person|
+    %li= link_to person, person
