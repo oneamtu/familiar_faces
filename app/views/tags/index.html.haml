@@ -1,5 +1,6 @@
 %br
 %br
-- @tags.zip(["primary", "ternary", "secondary", "quaternary"]).each do |tag, color|
+- colors = ["primary", "ternary", "secondary", "quaternary"]
+- @tags.each.with_index do |tag, i|
   .row.dashboard-tag
-    = link_to tag.name.upcase, tag, class: ["dashboard-tag-button", color]
+    = link_to tag.name.upcase, tag, class: ["dashboard-tag-button", colors[i % 4]]
