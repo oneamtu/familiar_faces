@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+ruby '2.1.6'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -46,7 +46,7 @@ gem 'carrierwave'
 gem "mini_magick"
 
 # s3 storage
-gem 'fog'
+gem "fog"
 
 gem 'pry-rails', group: [:test, :development]
 
