@@ -51,3 +51,8 @@ gem "mini_magick"
 gem 'fog'
 
 gem 'pry-rails', group: [:test, :development]
+
+gem 'activeadmin', github: 'activeadmin'
+
+# Plus integrations with:
+gem 'devise'
