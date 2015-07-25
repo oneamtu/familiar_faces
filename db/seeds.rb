@@ -58,3 +58,4 @@ PersonImage.create(person: mom, image: File.open('app/assets/images/michelle.jpg
 PersonImage.create(person: jim, image: File.open('app/assets/images/jim.jpg'))
 PersonImage.create(person: chris, image: File.open('app/assets/images/farley.jpg'))
 PersonImage.create(person: bill, image: File.open('app/assets/images/belichick.jpg'))
+PersonImage.create(person: bill, image: File.open('app/assets/images/brady.jpg'))
