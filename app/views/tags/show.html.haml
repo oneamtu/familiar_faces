@@ -1,9 +1,9 @@
 %div.row
   %h1= @tag
-  %ul.small-block-grid-2.medium-block-grid-3.large-block-grid-4
+  %ul.small-block-grid-2.medium-block-grid-3.large-block-grid-3
     - @people.each do |person|
       %li
         = link_to person do
-          %img{:src => "#{person.image_path}"}
+          %img{:src => "#{person.image_path}", style: 'width:100%'}
           %p{class: 'button expand large'}
             = person.to_s

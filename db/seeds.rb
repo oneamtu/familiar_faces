@@ -43,7 +43,7 @@ Tag.create([{ name: 'Family' },
             { name: 'Friends' },
             { name: 'Caregivers' },
             { name: 'Today' },
-            { name: 'All' }])
+            { name: 'All People' }])
 
 TagRecord.create(person: tom, tag: Tag.find_by_name('Friends'))
 TagRecord.create(person: tom, tag: Tag.find_by_name('Today'))

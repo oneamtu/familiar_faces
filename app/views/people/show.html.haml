@@ -1,5 +1,5 @@
 %div.row
-  .slick
+  .slick.small-9.small-centered.columns
     - @person.image_paths.reverse.each do |path|
       %img{alt: @person.name, src: path}
 
