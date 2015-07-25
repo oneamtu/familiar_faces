@@ -5,6 +5,10 @@ class Person < ActiveRecord::Base
     name
   end
 
+  def to_s_with_relationship
+    relationship_description ? "#{to_s} (#{relationship_description})" : to_s
+  end
+
   def name
     "#{first_name} #{last_name}"
   end

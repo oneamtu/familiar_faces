@@ -1,9 +1,8 @@
+%br
 %div.row
-  .slick.small-9.small-centered.columns
-    - @person.image_paths.reverse.each do |path|
-      %img{alt: @person.name, src: path}
-
-  %h1= @person.name
-  %p #{@person.relationship_description}
-  %p Birthday: #{@person.birthday.to_s(:long)}
-  %p Notes: #{@person.notes}
+  .small-9.small-centered.columns
+    .button.expand.large.person-image-title
+      #{@person.to_s_with_relationship}
+    .slick
+      - @person.image_paths.reverse.each do |path|
+        %img{alt: @person.name, src: path}
