@@ -57,6 +57,13 @@ ActiveRecord::Schema.define(version: 20150725184417) do
     t.datetime "updated_at"
   end
 
+  create_table "person_images", force: :cascade do |t|
+    t.integer  "person_id"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "tag_records", force: :cascade do |t|
     t.integer  "tag_id"
     t.integer  "person_id"

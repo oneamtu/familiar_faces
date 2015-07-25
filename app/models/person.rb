@@ -1,4 +1,6 @@
 class Person < ActiveRecord::Base
+  has_many :person_images
+
   def to_s
     name
   end
@@ -8,6 +10,10 @@ class Person < ActiveRecord::Base
   end
 
   def image_path
-    "person_image_placeholder.png"
+    image_paths.first
+  end
+
+  def image_paths
+    person_images.map { |i| i.image.current_path }.flatten
   end
 end
