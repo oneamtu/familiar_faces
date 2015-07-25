@@ -1,5 +1,5 @@
 class Person < ActiveRecord::Base
-  has_many :person_images
+  has_many :person_images, dependent: :destroy
 
   def to_s
     name
