@@ -1,0 +1,6 @@
+= image_tag(@person.image_path)
+%h1= @person.name
+%p #{@person.relationship_description}
+%p Birthday: #{@person.birthday.to_s(:long)}
+%p Notes: #{@person.notes}
+= link_to "Edit", [:edit, @person]
