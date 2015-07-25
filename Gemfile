@@ -48,3 +48,8 @@ gem "mini_magick"
 
 # s3 storage
 gem 'fog'
+
+gem 'activeadmin', github: 'activeadmin'
+
+# Plus integrations with:
+gem 'devise'
