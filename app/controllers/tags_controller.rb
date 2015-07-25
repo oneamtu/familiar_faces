@@ -6,6 +6,10 @@ class TagsController < ApplicationController
 
   def show
     @tag = Tag.find(params[:id])
-    @people = @tag.people.order(:click_rank)
+    if @tag.to_s == 'All'
+      @people = Person.all.order(:click_rank)
+    else
+      @people = @tag.people.order(:click_rank)
+    end
   end
 end

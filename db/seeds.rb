@@ -42,7 +42,8 @@ bill = Person.create(first_name: "Bill",
 Tag.create([{ name: 'Family' },
             { name: 'Friends' },
             { name: 'Caregivers' },
-            { name: 'Coworkers' }])
+            { name: 'Coworkers' },
+            { name: 'All' }])
 
 TagRecord.create(person: tom, tag: Tag.find_by_name('Friends'))
 TagRecord.create(person: tom, tag: Tag.find_by_name('Coworkers'))
