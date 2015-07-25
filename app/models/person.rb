@@ -13,6 +13,10 @@ class Person < ActiveRecord::Base
     image_paths.first
   end
 
+  def thumb_path
+    person_images.first.image.thumb.url
+  end
+
   def image_paths
     person_images.map { |i| i.image.url }.flatten
   end
