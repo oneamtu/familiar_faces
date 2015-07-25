@@ -20,6 +20,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'foundation-rails'
+gem 'awesome_print', require: 'ap'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -48,3 +49,5 @@ gem "mini_magick"
 
 # s3 storage
 gem 'fog'
+
+gem 'pry-rails', group: [:test, :development]
