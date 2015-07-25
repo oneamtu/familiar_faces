@@ -14,6 +14,6 @@ class Person < ActiveRecord::Base
   end
 
   def image_paths
-    person_images.map { |i| i.image.current_path }.flatten
+    person_images.map { |i| i.image.url }.flatten
   end
 end
