@@ -48,3 +48,5 @@ gem 'activeadmin', github: 'activeadmin'
 
 # Plus integrations with:
 gem 'devise'
+
+gem 'haml-rails'
