@@ -1,9 +1,7 @@
 %div.row
-  %ul.example-orbit{"data-orbit" => ""}
+  .slick
     - @person.image_paths.reverse.each do |path|
-      %li
-        %img{:alt => "#{@person.name}", :src => "#{path}"}
-        .orbit-caption #{@person.name}
+      %img{alt: @person.name, src: path}
 
   %h1= @person.name
   %p #{@person.relationship_description}
