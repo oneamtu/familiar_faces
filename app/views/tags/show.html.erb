@@ -2,7 +2,7 @@
 <%= link_to "Back", [:tags] %>
 
 <ul>
-  <% tag_records.each do |tag_record| %>
-    <li><% link_to tag_record, tag_record %></li>
+  <% @people.each do |person| %>
+    <li><%= link_to person, person %></li>
   <% end %>
 </ul>
