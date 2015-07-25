@@ -2,7 +2,8 @@ class PeopleController < ApplicationController
 
   def index
     tag_id = 1 # parms[:tag_id]
-    @people = TagRecords.find(tag_id).map {|tr| tr.person}
+    @tag = Tag.find(tag_id)
+    @people = TagRecord.where(tag_id: tag_id).map {|tr| tr.person}
   end
 
   def show

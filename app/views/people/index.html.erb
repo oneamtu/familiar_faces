@@ -1,11 +1,15 @@
-<h1><% @tag.to_s %></h1>
+<h1><%= @tag.to_s %></h1>
 <body>
   <table>
     <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-      <% @people.each do %>
-      BOB
-      <li><img="smiley_face.jpg"></li>
+    <% form_for @people do |f| %>
+    <%  %>
 
+    <% @people.each do |p| %>
+      <li>
+        <%= p.to_s %>
+        <img src="smiley_face.jpg">
+      </li>
     <% end %>
     </ul>
 
